@@ -1,11 +1,3 @@
-body{
-    margin: 0%;
-    padding: 0%;
-}
-
-
-
-
 element.style {
     background-image: url(https://www.amootsms.com/wp-content/themes/amootsms/assets/images/hero-bottom-bg.png);
     background-repeat: no-repeat;
@@ -28,7 +20,12 @@ element.style {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+@media (min-width: 1400px) {
+    .row {
+        gap: 18px;
+        width: 100%;
+    }
+}
 .hero-image{
     display: flex;
     justify-content: flex-end;
@@ -66,14 +63,10 @@ div {
     unicode-bidi: isolate;
 }
 
-.col-lg5{
-    margin-right: 5px;
-    width: 800px;
-}
 
 .hero-text{
-    width: 700px;
-   
+    border: 1px solid green;
+
 }
 
 
@@ -104,14 +97,12 @@ img {
 
 .hero-subtext{
     display: flex;
-    font-size: 38px;
-    font-style: normal;
+    font-size: 36px;
     font-weight: 600;
     position: relative;
     flex-wrap: wrap;
     justify-content: center;
     line-height: 2.2;
-    margin-left: 220px;
 }
 
 
@@ -119,7 +110,7 @@ img {
 
 .hero-subtext img:nth-child(1){
     position: absolute;
-    right:10px;
+    right: 30px;
     top: 10px;
 }
 
@@ -130,209 +121,10 @@ img {
 
 .hero-subtext img:nth-child(3){
     position: absolute;
-    top: 95px;
-    left: 10px;
-}
-
-.hero-image {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-}
-
-.rows{
-    display: flex;
-    flex-direction: row-reverse;
-}
-.hero-desc {
-    display: inline-block;
-    text-align: justify;
-    font-size: 30px;
-    color: rgb(63, 61, 61);
-}
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
+    top: 90px;
+    left: 30px;
 }
 
 
 
-
-
-
-
-
-
-@keyframes slowRotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-.hero-image .circle-hero {
-    animation: slowRotate 28s linear infinite;
-    position: absolute;
-    z-index: -5;
-    left: -9%;
-    top: -22%;
-  }
-
-
-
-
-
-
-.hero-buttons{
-    display: flex;
-    flex-direction: row;
-    font-size: 18px;
-}
-
-
-.but1{
-    background-color: #FF6137;
-    margin-left: 20px;
-    text-decoration: none;
-    height: 35px;
-    text-align: center;
-    border-radius: 25px;
-    width: 135px;
-    color: white;
-  }
-.but2{
-    background-color: white;
-    border: 1px solid #FF6137;
-    text-decoration: none;
-    height: 35px;
-    border-radius: 25px;
-    width: 135px;
-    color: #FF6137;
-    text-align:center;
-  }
-
-.svg1{
-    width:25px;
-    height:24px;
-    color:#fff;
-  }
-
-
-
-
-
-
-@media (min-width: 1400px) {
-    .rows{
-        width: auto;
-    }
-}
-
-@media (max-width: 640px) {
-    .container{
-        max-width: 100%;
-        padding: 12px;
-    }
-    .rows{
-        height: auto;
-        flex-direction: column;
-        max-width: 100%;
-    }
-    .hero-text{
-        width:100%
-    }
-    .col-lg5{
-        width:100%
-    }
-    .hero-subtext{
-        width: 100%;
-        font-size: 100%;
-    }
-    .hero-text h1{
-        width: 100%;
-        font-size: 100%;
-    }
-    .hero-text h1 img{
-        width: 10%;
-        margin-right: 25%;
-    }
-    .hero-subtext img:nth-child(1){
-        display: none;
-    }
-    .hero-subtext img:nth-child(3){
-        display: none;
-    }
-    .hero-subtext img:nth-child(2){
-        width:10%;
-    }
-    .hero-desc{
-        font-size: 100%;
-    }
-    .hero-buttons{
-        width: 100%;
-        font-size: 100%;
-    }
-
-}
-
-
-
-
-
-@media (max-width: 1024px) {
-    .container{
-        max-width: 100%;
-        padding: 12px;
-    }
-    .rows{
-        height: auto;
-        flex-direction: column;
-        max-width: 100%;
-    }
-    .hero-text{
-        width:100%
-    }
-    .col-lg5{
-        width:100%
-    }
-    .hero-subtext{
-        width: 100%;
-        font-size: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-text h1{
-        width: 100%;
-        font-size: 100%;
-    }
-    .hero-text h1 img{
-        width: 8%;
-        margin-right: 35%;
-    }
-    .hero-subtext img:nth-child(1){
-        display: none;
-    }
-    .hero-subtext img:nth-child(3){
-        display: none;
-    }
-    .hero-subtext img:nth-child(2){
-        width:7%;
-        align-self: center;
-    }
-    .hero-desc{
-        font-size: 100%;
-    }
-    .hero-buttons{
-        width: 100%;
-        font-size: 100%;
-    }
-
-}
 

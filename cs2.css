@@ -15,8 +15,8 @@ body {
 
 .btn {
     border: 0;
-    background-color: white;
-    color: blue;
+    background-color: blue;
+    color: white;
 
 }
 
@@ -69,7 +69,7 @@ a.page-link.bf {
     background-color: white;
 }
 
-#main {
+#Categorie {
     background-color: #ede8e8;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -77,4 +77,37 @@ a.page-link.bf {
 
 #foot {
     background-color: black;
+}
+
+.btns {
+    border: 0;
+    color: blue;
+    background-color: white;
+}
+
+a.page-link.he {
+    border-radius: 50% !important;
+}
+
+#foot-page {
+    background-color: rgb(27, 26, 26);
+    color: rgba(255, 255, 255, 0.4);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.fooh {
+    color: white;
+}
+
+.input-group-text {
+    border: 1px solid rgb(19, 18, 18);
+    background-color: rgb(19, 18, 18);
+    color: white;
+}
+
+.form-control {
+    border: 1px solid rgb(19, 18, 18);
+    background-color: rgb(19, 18, 18);
+    color: white;
 }

@@ -38,3 +38,33 @@ body {
 .col-lg-3.as1>div {
     background: #fff;
 }
+
+.page-item.disabled .page-link {
+    color: black;
+    pointer-events: none;
+    background-color: gainsboro;
+    border: 0px;
+}
+
+.page-link {
+    font-weight: bold;
+    position: relative;
+    display: block;
+    color: black;
+    background-color: gainsboro;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 4px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+a.page-link.bf {
+    background-color: black;
+    color: white;
+}
+
+.page-link.he {
+    font-size: x-large;
+    font-weight: bold;
+    background-color: white;
+}

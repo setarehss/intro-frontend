@@ -1,5 +1,5 @@
 body {
-    background-color: gainsboro;
+    background-color: white;
 }
 
 .child {
@@ -51,7 +51,7 @@ body {
     position: relative;
     display: block;
     color: black;
-    background-color: gainsboro;
+    background-color: #ede8e8;
     text-decoration: none;
     border: 0px;
     border-radius: 4px;
@@ -67,4 +67,14 @@ a.page-link.bf {
     font-size: x-large;
     font-weight: bold;
     background-color: white;
+}
+
+#main {
+    background-color: #ede8e8;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#foot {
+    background-color: black;
 }

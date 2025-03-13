@@ -257,3 +257,22 @@ a.nav-link.active {
     margin-right: calc(var(--bs-gutter-x)* -.5);
     margin-left: calc(var(--bs-gutter-x)* -.5);
 }
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        padding-top: 2%;
+    }
+}
+
+
+.pics-head {
+    background-image: url(picture/guitarman-800.jpg);
+}
+
+.pics-head {
+    height: 564px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

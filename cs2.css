@@ -113,39 +113,123 @@ a.page-link.he {
 }
 
 
-
-
-img.pictr1 {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
+.col-lg-6.col-12 {
+    width: 65%;
 }
 
-@media (min-width: 992px) {
-    .pic1.col-lg-6.d-flex.justify-content-center {
-        flex: 0 0 auto;
-        width: 65%;
-        height: fit-content;
-    }
-}
-
-
-/* @media (min-width: 992px) {
-    .col-lg-6 {
-        flex: 0 0 auto;
-        width: 65%;
-    }
-} */
-
-.pic2.col-lg-6.d-flex.align-items-center.flex-column {
+.col-lg-6.col-12.d-flex.flex-column {
     width: 35%;
-    height: max-content;
 }
 
-.p-5 {
-    padding: 3rem !important;
+.bt1 {
+    background-color: #01aef0;
+    color: white;
+    border: 0px;
+    padding: 0px 3%;
+    font-weight: 600;
+    font-size: medium;
 }
 
-.mb-auto {
-    margin-bottom: 1px !important;
+#header {
+    background-color: rgb(27, 26, 26);
+
+}
+
+.paragraph1 {
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+a.nav-link.active {
+    color: white;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    /* min-width: 10rem; */
+    padding: .5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: black;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    /* border-radius: .25rem; */
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: white;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: white;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: black;
+    border: 0;
+}
+
+.mas-head {
+    color: white;
+}
+
+.hr-head {
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.content-head1 {
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    max-width: 55%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.pic-head {
+    width: 8%;
+    border-radius: 50%;
+}
+
+.sp1-head {
+    margin-left: 3%;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.bt2 {
+    background-color: #679a23;
+    color: white;
+    border: 0px;
+    padding: 0px 5%;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.content-head2 {
+    margin-bottom: 20%;
+    padding-bottom: 2%;
+    max-width: 100%;
+}
+
+.paragraph2 {
+    color: white;
+    font-weight: bold;
+    font-size: 150%;
 }

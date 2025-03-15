@@ -303,7 +303,7 @@ a.nav-link.active {
 }
 
 .col-lg-4.col-md-4.col-12 {
-    padding-left: 6%;
+    padding-left: 50px;
 }
 
 .icon-head {
@@ -319,19 +319,22 @@ i.fa.fa-facebook {
 
 @media (min-width: 992px) {
     .col-lg-4 {
-        padding-top: 1%;
+        padding-top: 6px;
     }
 }
 
 .search-box {
-    margin-top: 8%;
-    margin-left: 50%;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .form-control {
     width: 50%;
     background-color: rgb(27, 26, 26);
     border: 0px;
+    padding-left: 100px;
 }
 
 .form-control:focus {
@@ -339,4 +342,31 @@ i.fa.fa-facebook {
     background-color: rgb(27, 26, 26);
     border: 0px;
     box-shadow: none;
+}
+
+i.fa.fa-facebook {
+    padding-top: 10%;
+    font-size: x-large;
+}
+
+i.fa.fa-twitter {
+    padding-top: 10%;
+    font-size: x-large;
+}
+
+i.fa.fa-instagram {
+    padding-top: 10%;
+    font-size: x-large;
+}
+
+i.fa.fa-pinterest {
+    padding-top: 10%;
+    font-size: x-large;
+}
+
+.ic-hd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
 }

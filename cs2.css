@@ -244,23 +244,6 @@ a.nav-link.active {
 }
 
 
-.row {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y)* -1);
-    margin-right: calc(var(--bs-gutter-x)* -.5);
-    margin-left: calc(var(--bs-gutter-x)* -.5);
-}
-
-@media (min-width: 992px) {
-    .col-lg-4 {
-        padding-top: 2%;
-    }
-}
-
-
 .pics-head1 {
     background-image: url(picture/guitarman-800.jpg);
 }
@@ -302,29 +285,16 @@ a.nav-link.active {
     padding-top: 30%;
 }
 
-.col-lg-4.col-md-4.col-12 {
-    padding-left: 50px;
-}
-
 .icon-head {
     font-weight: bold;
     font-size: xxx-large;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 i.fa.fa-facebook {
     padding-top: 10%;
 }
 
-@media (min-width: 992px) {
-    .col-lg-4 {
-        padding-top: 6px;
-    }
-}
-
 .search-box {
-    margin-top: 23px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -368,5 +338,4 @@ i.fa.fa-pinterest {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 15px;
 }

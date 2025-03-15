@@ -30,10 +30,7 @@ body {
     padding: 2% 10%;
 }
 
-.as1 {
-    margin-left: 2%;
-    height: max-content;
-}
+
 
 .col-lg-3.as1>div {
     background: #fff;
@@ -296,7 +293,7 @@ i.fa.fa-facebook {
 
 .search-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
 }
 

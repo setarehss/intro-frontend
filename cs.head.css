@@ -10,14 +10,20 @@ body {
     padding: 20px 20px;
 }
 
-.col-lg-4 .he1 {
-    text-align: center;
-    position: relative;
+.row.col-12 {
+    padding-top: 20px;
 }
 
-.col-lg-4 .he2 {
-    text-align: center;
+.col-lg-6.he1 {
     position: relative;
+    display: flex;
+    justify-content: left;
+}
+
+.col-lg-6.he2 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .pic1 {
@@ -49,6 +55,11 @@ i.fa.fa-envelope {
 }
 
 .button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.txt-container {
     display: flex;
     gap: 10px;
 }

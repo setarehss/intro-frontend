@@ -335,3 +335,19 @@ i.fa.fa-pinterest {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.col-lg-4.hf {
+    margin-top: 30px;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: black;
+}
+
+.btn-head {
+    border: 0;
+    background-color: rgb(27, 26, 26);
+    color: white;
+}

@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+
+.row.col-12.align-items-center {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.col-lg-4 .he1 {
+    text-align: center;
+}
+
+.pic1 {
+    width: 150px;
+}
+
+.search-box {
+    margin-right: 30px;
+    width: 500px;
+    height: 45px;
+    text-align: right;
+    border-radius: 5px;
+    border: 1px solid gray;
+}

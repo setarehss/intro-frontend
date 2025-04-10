@@ -82,3 +82,17 @@ i.fa.fa-envelope {
 i.fa.fa-user-o {
     padding-right: 8px;
 }
+
+
+button.button-nav {
+    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+}
+
+
+
+.navbar-nav {
+    text-align: left;
+}

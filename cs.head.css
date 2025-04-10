@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    direction: rtl;
 }
 
 
@@ -11,6 +12,12 @@ body {
 
 .col-lg-4 .he1 {
     text-align: center;
+    position: relative;
+}
+
+.col-lg-4 .he2 {
+    text-align: center;
+    position: relative;
 }
 
 .pic1 {
@@ -22,6 +29,40 @@ body {
     width: 500px;
     height: 45px;
     text-align: right;
+    font-weight: bold;
     border-radius: 5px;
     border: 1px solid gray;
+    padding: 5px;
+}
+
+
+i.fa.fa-search {
+    position: absolute;
+    right: 45%;
+    top: 6%;
+    font-size: 16px;
+    color: black;
+}
+
+i.fa.fa-envelope {
+    padding-left: 8px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+i.fa.fa-user-o {
+    padding-right: 8px;
 }

@@ -187,28 +187,45 @@ ul.nav>li:hover>div.panel {
     color: black;
 }
 
-.contain-right>ul>li>a {
+.right-panel>ul>li>a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-
-
-
-.contain-right ul li {
+.right-panel ul li {
     padding: 10px 0%;
 }
 
-.content {
-    display: none;
+
+
+
+
+.right-panel ul {
+    list-style-type: none;
 }
 
-.contain-right>.item:hover+.left-column .content {
-    display: block;
+.right-panel .item {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.content.p {
-    color: black;
+.right-panel .item:hover {
+    background-color: #007bff;
+    color: white;
+}
 
+.left-panel {
+    width: 65%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#item-info {
+    font-size: 18px;
+    color: #555;
 }

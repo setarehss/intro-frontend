@@ -96,3 +96,9 @@ button.button-nav {
 .navbar-nav {
     text-align: left;
 }
+
+.a-nav {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}

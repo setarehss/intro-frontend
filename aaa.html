@@ -4,168 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه با هاور و نمایش اطلاعات</title>
+    <title>Hover Pop-up بدون JavaScript</title>
     <style>
+        /* جهت‌دهی صفحه به صورت راست به چپ */
         body {
-            font-family: Tahoma, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            height: 100vh;
             background-color: #f4f4f4;
             direction: rtl;
-            /* راست‌چین کردن صفحه */
+            /* جهت متن به راست به چپ */
+            text-align: right;
         }
 
-        /* استایل دکمه */
-        .button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
+        /* استایل لینک */
+        .hover-link {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #007BFF;
+            text-decoration: none;
+            padding: 10px;
+            margin: 50px;
+            background-color: #f4f4f4;
             cursor: pointer;
-            border-radius: 5px;
-            margin: 20px;
         }
 
-        .button:hover {
-            background-color: #218838;
-        }
-
-        /* استایل برگه */
-        .container {
-            display: flex;
-            height: 100vh;
-            visibility: hidden;
+        /* استایل پاپ‌آپ */
+        .popup {
+            display: none;
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            transition: visibility 0.5s;
-        }
-
-        .container.visible {
-            visibility: visible;
-        }
-
-        /* پنل سمت راست */
-        .right-panel {
-            width: 250px;
-            background-color: #333;
-            color: white;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            box-sizing: border-box;
+            z-index: 100;
+            transition: all 0.3s ease;
         }
 
-        .right-panel ul {
-            list-style: none;
+        /* استایل زمانی که لینک هاور می‌شود */
+        .hover-link:hover+.popup {
+            display: block;
+        }
+
+        /* استایل لیست‌های داخل پاپ‌آپ */
+        .popup ul {
+            list-style-type: none;
             padding: 0;
         }
 
-        .right-panel ul li {
+        .popup ul li {
             margin: 10px 0;
-            cursor: pointer;
-            padding: 10px;
-            background-color: #444;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .right-panel ul li:hover {
-            background-color: #555;
-        }
-
-        /* پنل سمت چپ */
-        .left-panel {
-            flex-grow: 1;
-            padding: 20px;
-            background-color: white;
-            box-sizing: border-box;
-            border-left: 2px solid #ccc;
-        }
-
-        /* مخفی کردن محتوا پیش‌فرض */
-        .content {
-            display: none;
-        }
-
-        /* نمایش محتوا هنگام هاور روی هر آیتم */
-        #item1:hover~.left-panel .content1 {
-            display: contents;
-        }
-
-        #item2:hover~.left-panel .content2 {
-            display: block;
-        }
-
-        #item3:hover~.left-panel .content3 {
-            display: block;
-        }
-
-        #item4:hover~.left-panel .content4 {
-            display: block;
-        }
-
-        #item5:hover~.left-panel .content5 {
-            display: block;
-        }
-
-        #item6:hover~.left-panel .content6 {
-            display: block;
-        }
-
-        /* استایل محتوا */
-        .left-panel p {
-            font-size: 18px;
-            margin: 0;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
-            margin-top: 10px;
-            color: black;
+            color: #333;
+            font-size: 16px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- دکمه برای هاور کردن -->
-    <button class="button" onmouseover="document.querySelector('.container').classList.add('visible');">باز کردن
-        برگه</button>
+    <a href="#" class="hover-link">
+        روی من هاور کن
+    </a>
 
-    <!-- برگه شامل لیست‌ها و محتوا -->
-    <div class="container">
-        <div class="right-panel">
-            <ul>
-                <li id="item1">آیتم اول</li>
-                <li id="item2">آیتم دوم</li>
-                <li id="item3">آیتم سوم</li>
-                <li id="item4">آیتم چهارم</li>
-                <li id="item5">آیتم پنجم</li>
-                <li id="item6">آیتم ششم</li>
-            </ul>
-        </div>
-        <div class="left-panel">
-            <div class="content content1">
-                <p>شما روی آیتم اول هاور کرده‌اید. اطلاعات مربوط به آیتم اول در اینجا نمایش داده می‌شود.</p>
-            </div>
-            <div class="content content2">
-                <p>شما روی آیتم دوم هاور کرده‌اید. اطلاعات مربوط به آیتم دوم در اینجا نمایش داده می‌شود.</p>
-            </div>
-            <div class="content content3">
-                <p>شما روی آیتم سوم هاور کرده‌اید. اطلاعات مربوط به آیتم سوم در اینجا نمایش داده می‌شود.</p>
-            </div>
-            <div class="content content4">
-                <p>شما روی آیتم چهارم هاور کرده‌اید. اطلاعات مربوط به آیتم چهارم در اینجا نمایش داده می‌شود.</p>
-            </div>
-            <div class="content content5">
-                <p>شما روی آیتم پنجم هاور کرده‌اید. اطلاعات مربوط به آیتم پنجم در اینجا نمایش داده می‌شود.</p>
-            </div>
-            <div class="content content6">
-                <p>شما روی آیتم ششم هاور کرده‌اید. اطلاعات مربوط به آیتم ششم در اینجا نمایش داده می‌شود.</p>
-            </div>
-        </div>
+    <!-- پاپ‌آپ -->
+    <div class="popup">
+        <h2>لیست‌ها</h2>
+        <ul>
+            <li>لیست 1</li>
+            <li>لیست 2</li>
+            <li>لیست 3</li>
+            <li>لیست 4</li>
+        </ul>
+        <ul>
+            <li>لیست 5</li>
+            <li>لیست 6</li>
+            <li>لیست 7</li>
+            <li>لیست 8</li>
+        </ul>
     </div>
 
 </body>

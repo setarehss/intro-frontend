@@ -175,12 +175,40 @@ ul.nav>li:hover>div.panel {
 
 .right-column {
     width: 30%;
-    height: 50px;
-    background-color: blue;
+    height: auto;
+    background-color: white;
 }
 
 .left-column {
     width: 70%;
-    height: 50px;
-    background-color: brown;
+    height: auto;
+    background-color: white;
+    border-right: 1px solid gray;
+    color: black;
+}
+
+.contain-right>ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+.contain-right ul li {
+    padding: 10px 0%;
+}
+
+.content {
+    display: none;
+}
+
+.contain-right>.item:hover+.left-column .content {
+    display: block;
+}
+
+.content.p {
+    color: black;
+
 }

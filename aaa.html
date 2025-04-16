@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-canvas با هل دادن صفحه</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Tahoma, sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            /* جلوگیری از اسکرول افقی */
+        }
+
+        /* محتوای اصلی صفحه */
+        .content {
+            transition: transform 0.3s ease;
+            padding: 20px;
+        }
+
+        .open-btn {
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* off-canvas */
+        .offcanvas {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: #f9f9f9;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            transition: right 0.3s ease;
+            z-index: 1000;
+        }
+
+        .offcanvas.show {
+            right: 0;
+        }
+
+        /* وقتی منو باز میشه، کل صفحه به چپ می‌ره */
+        .content.shifted {
+            transform: translateX(-300px);
+        }
+
+        .close-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content" id="mainContent">
+        <button class="open-btn" onclick="openCanvas()">باز کردن منو</button>
+        <h1>خوش آمدید</h1>
+        <p>محتوای صفحه که با باز شدن منو به چپ هل داده می‌شود.</p>
+    </div>
+
+    <div class="offcanvas" id="myOffcanvas">
+        <button class="close-btn" onclick="closeCanvas()">بستن ✖</button>
+        <h3>منوی کناری</h3>
+        <ul>
+            <li>خانه</li>
+            <li>خدمات</li>
+            <li>تماس با ما</li>
+        </ul>
+    </div>
+
+    <script>
+        function openCanvas() {
+            document.getElementById("myOffcanvas").classList.add("show");
+            document.getElementById("mainContent").classList.add("shifted");
+        }
+
+        function closeCanvas() {
+            document.getElementById("myOffcanvas").classList.remove("show");
+            document.getElementById("mainContent").classList.remove("shifted");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 function openCanvas() {
-    document.getElementById("myOffcanvas").classList.add("show");
+    document.getElementById("myOffcanvas").classList.toggle("show");
 }
 
 function closeCanvas() {

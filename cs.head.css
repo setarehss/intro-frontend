@@ -153,7 +153,7 @@ ul {
 
 
 .panel {
-    background-color: burlywood;
+    background-color: white;
     display: none;
     position: absolute;
     width: 80%;
@@ -217,11 +217,14 @@ ul.nav>li:hover>div.panel {
     color: white;
 }
 
+.right-panel {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .left-panel {
     width: 80%;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -237,7 +240,7 @@ ul.nav>li:hover>div.panel {
 
 
 .box {
-    border: 1px solid blue;
+    border: 1px solid white;
     padding: 5px;
     width: 20%;
     text-align: center;

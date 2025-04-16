@@ -32,8 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function openCanvas() {
     document.getElementById("myOffcanvas").classList.toggle("show");
+    document.getElementById("mainContent").classList.add("shifted");
 }
 
 function closeCanvas() {
     document.getElementById("myOffcanvas").classList.remove("show");
+    document.getElementById("mainContent").classList.remove("shifted");
 }

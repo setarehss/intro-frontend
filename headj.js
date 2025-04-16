@@ -26,5 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById(`content${index + 1}`).style.display = 'block';
         });
 
+
     });
 })
+
+function openCanvas() {
+    document.getElementById("myOffcanvas").classList.add("show");
+}
+
+function closeCanvas() {
+    document.getElementById("myOffcanvas").classList.remove("show");
+}

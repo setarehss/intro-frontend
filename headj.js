@@ -1,11 +1,20 @@
 // بعد از لود شدن صفحه کد ها اجرا شود
 document.addEventListener("DOMContentLoaded", function () {
 
+    const itemsMenu = document.querySelectorAll('.item');
+
     // حلقه روی .item ها
-    document.querySelectorAll('.item').forEach((item, index) => {
+    itemsMenu.forEach((item, index) => {
 
         // اضافه کردن اکشن هاور روی المنت item
         item.addEventListener('mouseenter', function () {
+
+            itemsMenu.forEach((element) => {
+                element.classList.remove('active');
+            })
+
+            // اضافه کردن کلاس active به المنت item
+            item.classList.add('active');
 
             // حلقه برای پنهان کردن المنت های دیگر
             document.querySelectorAll('.left-panel > div').forEach((div) => {

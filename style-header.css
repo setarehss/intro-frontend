@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    direction: rtl;
+    padding: 0;
+    height: 100vh;
+    font-family: "Vazirmatn", sans-serif;
+}
+
+
+.row.col-12.align-items-center {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.row.col-12 {
+    padding-top: 20px;
+}
+
+.col-lg-6.he1 {
+    position: relative;
+    display: flex;
+}
+
+.col-lg-6.he2 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pic1 {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.header-wall {
+    position: relative;
+}
+
+.search-box {
+    margin-right: 30px;
+    width: 500px;
+    height: 45px;
+    text-align: right;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+i.fa.fa-search {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 16px;
+    color: black;
+}
+
+
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 1px 12px;
+    height: 50px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.txt-container {
+    display: flex;
+    gap: 10px;
+}
+
+i.fa.fa-envelope {
+    padding-left: 8px;
+}
+
+i.fa.fa-user-o {
+    padding-right: 8px;
+}
+
+
+button.button-nav {
+    padding: 5px 10px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+}
+
+
+
+.navbar-nav {
+    text-align: left;
+}
+
+.a-nav {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+
+
+.hover-link {
+    display: inline;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: auto;
+    max-height: 640px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 100;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+
+}
+
+
+li.item.active {
+    color: #007bff;
+}
+
+.left-panel>div>div .box h6 {
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.left-panel>div>div .box p {
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.left-panel>div>div {
+    gap: 24px;
+}
+
+.hover-link:hover+.popup {
+    display: block;
+}
+
+.popup ul li {
+    padding: 0%;
+    font-weight: 400;
+}
+
+ul.nav>li:hover>div.popup {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+
+
+.panel {
+    background-color: white;
+    display: none;
+    position: absolute;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    z-index: 100;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+}
+
+.button-nav:hover+.panel {
+    display: flex;
+
+}
+
+ul.nav>li:hover>div.panel {
+    display: flex;
+}
+
+.right-column {
+    width: 30%;
+    height: auto;
+    background-color: white;
+}
+
+.left-column {
+    width: 70%;
+    height: auto;
+    background-color: white;
+    border-right: 1px solid gray;
+    color: black;
+}
+
+.right-panel>ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.right-panel ul li {
+    padding: 10px 0%;
+}
+
+
+
+
+
+.right-panel ul {
+    list-style-type: none;
+}
+
+.right-panel .item {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-panel .item:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.right-panel {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#item-info {
+    font-size: 18px;
+    color: #555;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.box {
+    border: 1px solid white;
+    padding: 5px;
+    width: 20%;
+    text-align: center;
+}
+
+.box h6 {
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+@media(max-width: 768px) {
+    #header {
+        display: none;
+    }
+}
+
+
+
+
+.head-part-one {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blueviolet;
+}
+
+.part {
+    width: 20%;
+    text-align: center;
+}
